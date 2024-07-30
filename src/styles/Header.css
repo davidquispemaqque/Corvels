@@ -1,0 +1,92 @@
+.header-main-section {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo y el texto */
+  padding: 20px 0;
+}
+
+.logo-img {
+  height: 100px;
+  margin-right: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.titulo {
+  font-size: 33px;
+  font-weight: bold; /* Hace el texto en negrita */
+  margin: 0; /* Remueve márgenes para una alineación precisa */
+  color: #000; /* Asegura que el texto sea negro */
+}
+
+.subtitulo {
+  display: block;
+  font-weight: bold; /* Asegura que el subtítulo también esté en negrita */
+  color: #000; /* Asegura que el texto sea negro */
+}
+
+.telefono,
+.atencion {
+  font-weight: bold;
+  font-size: 1.2rem; /* Ajusta el tamaño según sea necesario */
+}
+
+.phone-number,
+.hours {
+  font-size: 1rem; /* Ajusta el tamaño según sea necesario */
+}
+
+.contact-info-item i {
+  font-size: 1.2rem; /* Tamaño de los íconos */
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+
+.cta-button-container button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.navigation-bar {
+  background-color: #4480A6;
+  padding: 20px 0; /* Aumenta el padding para más espacio vertical */
+}
+
+.navigation-bar .nav-link {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+  margin: 0 15px; /* Aumenta el margen entre los elementos de navegación */
+}
+
+.navigation-bar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navigation-bar .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to bottom, #293d52, #00A4FF);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navigation-bar .dropdown-item {
+  color: #fff;
+}
+
+.navigation-bar .dropdown-item:hover {
+  background-color: #0056b3;
+}
