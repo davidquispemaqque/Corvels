@@ -1,0 +1,50 @@
+/* src/styles/Merchandising.css */
+.merchandising-container {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.text-overlay h1 {
+  font-size: 2rem;
+  color: #00416d;
+  margin-bottom: 1rem;
+}
+
+.text-overlay button {
+  background-color: #4480A6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.text-overlay button:hover {
+  background-color: #005f8d;
+}
+
+.footer-image-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-image-container img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 8px;
+  
+}
