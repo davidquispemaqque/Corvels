@@ -1,0 +1,491 @@
+.about-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-carousel-container {
+  margin-top: 40px;
+}
+
+.about-slide-image {
+  height: 500px;
+  object-fit: cover;
+}
+
+.about-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 80px;
+  border-radius: 10px;
+  
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.about-button {
+  background-color: #00AEEF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #007bb5;
+}
+
+/* Estilos para la sección de Sobre nosotros */
+.about-description-section {
+  padding: 30px 0;
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.section-sobrenosotros {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+  padding-bottom: 2px; /* Ajusta el espacio entre el texto y la línea */
+}
+
+.section-sobrenosotros::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); /* Centra la línea y la escala */
+  bottom: 0; /* Posiciona la línea justo debajo del texto */
+  width: 20%;
+  height: 4px; /* Grosor de la línea */
+  background-color: #3b97fa; /* Color de la línea */
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.section-sobrenosotros:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.description-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+  padding-bottom: 5px; /* Ajusta el espacio entre el texto y la línea */
+  display: inline-block;
+}
+
+.description-item h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); /* Centra la línea y la escala */
+  bottom: 0; /* Posiciona la línea justo debajo del texto */
+  width: 100%;
+  height: 4px; /* Grosor de la línea */
+  background-color: #3b97fa; /* Color de la línea */
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.description-item h3:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.description-historia,
+.description-mision,
+.description-vision {
+  display: inline-block;
+  width: 30%;
+  padding: 0 10px;
+  margin-bottom: 40px;
+  vertical-align: top;
+}
+
+.description-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.description-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilos para la sección ¿Por qué elegirnos? */
+
+.section-container-elegirnos {
+  width: 100%;
+  background-color: #d6d8da;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-container-inner {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section-eligirnos {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  padding-bottom: 5px; /* Ajusta el espacio entre el texto y la línea */
+  text-align: left;
+  flex-basis: 100%;
+  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+  display: inline-block;
+}
+
+.section-eligirnos::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); /* Centra la línea y la escala */
+  bottom: 0; /* Posiciona la línea justo debajo del texto */
+  width: 100%;
+  height: 4px; /* Grosor de la línea */
+  background-color: #3b97fa; /* Color de la línea */
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.section-eligirnos:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.why-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.why-us-left, .why-us-right {
+  width: 48%;
+}
+
+.why-us-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.why-us-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.why-us-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.why-us-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-us-item p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+.why-us-right h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: left;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-image {
+  width: 22%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+
+/* Contenedor principal de la sección de resultados */
+.results-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+.results-description {
+  flex: 1;
+  font-size: 1.5rem;
+  color: #3b97fa;
+  margin-right: 20px;
+}
+
+.section-resultados {
+  color: #000000;
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block; /* Asegura que el contenedor se ajuste al texto */
+  padding-bottom: 5px; /* Ajusta el espacio entre el texto y la línea */
+}
+
+.section-resultados::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); /* Centra la línea y la escala */
+  bottom: 0; /* Posiciona la línea justo debajo del texto */
+  width: 100%;
+  height: 4px; /* Grosor de la línea */
+  background-color: #3b97fa; /* Color de la línea */
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.section-resultados:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.results-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.result-item {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.result-icon {
+  font-size: 3rem;
+  color: #3b97fa;
+  margin-bottom: 10px;
+}
+
+.result-number {
+  font-size: 1.8rem; /* Ajusta el tamaño según necesites */
+  color: #000; /* Color del texto */
+}
+
+.result-label {
+  font-size: 1rem; /* Tamaño del texto debajo del número */
+  color: #000000; /* Color del texto debajo del número */
+  margin-top: 5px; /* Espacio entre el número y el texto */
+}
+
+.work-with-us-container {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Hace que la sección ocupe toda la altura de la pantalla */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.work-with-us-image {
+  width: 100%;
+  height: 60vh; /* Ajusta la altura para que cubra toda la pantalla */
+  object-fit: cover; /* Asegura que la imagen cubra toda el área, manteniendo su proporción */
+  position: absolute; /* Asegura que la imagen se ajuste a su contenedor padre */
+  top: 0;
+}
+
+.work-with-us-caption {
+  position: relative; /* Cambia de absolute a relative */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 210px;
+  text-align: center;
+  color: white;
+  max-width: 100%; /* Asegura que el texto no se salga de la pantalla */
+  z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+}
+
+.work-with-us-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+  padding-bottom: 5px; /* Ajusta el espacio entre el texto y la línea */
+  display: inline-block;
+}
+
+.work-with-us-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); /* Centra la línea y la escala */
+  bottom: 0; /* Posiciona la línea justo debajo del texto */
+  width: 100%;
+  height: 4px; /* Grosor de la línea */
+  background-color: #3b97fa; /* Color de la línea */
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.work-with-us-title:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.work-with-us-subtitle {
+  font-size: 1.5rem;
+  color: #00AEEF;
+  margin-bottom: 20px;
+}
+
+.work-with-us-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.work-with-us-button {
+  background-color: #00AEEF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.work-with-us-button:hover {
+  background-color: #007bb5;
+}
+
+
+
+/* Estilos para la sección de Nuestros Clientes */
+.clients-section {
+  width: 100%;
+  background-color: #f5f5f5; /* Color de fondo similar al de la imagen */
+  padding: 60px 0;
+  text-align: center; /* Centra el contenido */
+}
+
+.section-clientes {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.section-clientes::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #3b97fa;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.section-clientes:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.clients-content {
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas si es necesario */
+}
+
+.client-item {
+  width: 18%; /* Ajusta el tamaño según sea necesario */
+  margin: 0 10px;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contactanos */
+.contact-banner {
+  width: 60%; /* Reduce el ancho para que no ocupe toda la pantalla */
+  background-color: #00AEEF; /* Fondo azul */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; /* Centra el contenido */
+  color: white;
+  margin: 50px auto; /* Centra horizontalmente y agrega margen superior */
+}
+
+.contact-banner-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.contact-banner-subtitle {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+
+.contact-banner-button {
+  background-color: white;
+  color: #00AEEF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center; /* Centra el contenido dentro del botón */
+}
+
+.contact-banner-button:hover {
+  background-color: #f0f0f0;
+}
+
+.contact-banner-button i {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}

@@ -1,92 +1,170 @@
-.header-main-section {
-  display: flex;
-  align-items: center; /* Alinea verticalmente el logo y el texto */
+/* Header Styles */
+.header-container {
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-top-bar {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.encabezado {
+  background-color: #f8f9fa;
   padding: 20px 0;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo-img {
-  height: 100px;
-  margin-right: 20px; /* Ajusta el margen según sea necesario */
+  height: 80px;
+  margin-right: 20px;
 }
 
 .titulo {
-  font-size: 33px;
-  font-weight: bold; /* Hace el texto en negrita */
-  margin: 0; /* Remueve márgenes para una alineación precisa */
-  color: #000; /* Asegura que el texto sea negro */
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
 }
 
 .subtitulo {
   display: block;
-  font-weight: bold; /* Asegura que el subtítulo también esté en negrita */
-  color: #000; /* Asegura que el texto sea negro */
-}
-
-.telefono,
-.atencion {
   font-weight: bold;
-  font-size: 1.2rem; /* Ajusta el tamaño según sea necesario */
+  color: #333;
 }
 
-.phone-number,
-.hours {
-  font-size: 1rem; /* Ajusta el tamaño según sea necesario */
+.contact-info-item {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.telefono, .atencion {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.phone-number, .hours {
+  font-size: 1rem;
 }
 
 .contact-info-item i {
-  font-size: 1.2rem; /* Tamaño de los íconos */
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
-
-.me-2 {
-  margin-right: 0.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 
 .cta-button-container button {
-  background-color: #000;
+  background-color: #9db41b;
   color: #fff;
   padding: 10px 20px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.cta-button-container button:hover {
+  background-color: #0056b3;
+}
 
+/* Navigation Bar Styles */
 .navigation-bar {
   background-color: #4480A6;
-  padding: 20px 0; /* Aumenta el padding para más espacio vertical */
+  padding: 15px 0;
 }
 
 .navigation-bar .nav-link {
   color: #fff;
   font-weight: bold;
-  font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
-  margin: 0 15px; /* Aumenta el margen entre los elementos de navegación */
+  font-size: 1.1rem;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.navigation-bar .nav-link.active {
+  color: #3a3a3a;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .navigation-bar .nav-link:hover {
-  text-decoration: underline;
+  color: #00AEEF;
 }
 
 .navigation-bar .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
-  background: linear-gradient(to bottom, #293d52, #00A4FF);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, #567ca5, #00A4FF);
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  width: 200px; /* Establece un ancho fijo */
+  white-space: normal;
+  text-align: left;
+  padding: 10px 0;
+  z-index: 1000; /* Asegura que el menú se muestre sobre otros elementos */
 }
-
 
 .navigation-bar .dropdown-item {
   color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  word-wrap: break-word;
+  white-space: normal;
+  transition: background-color 0.3s ease;
 }
 
 .navigation-bar .dropdown-item:hover {
   background-color: #0056b3;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb-container {
+  background-color: #f8f9fa;
+  border-top: 4px solid #000000;
+  padding: 10px 0;
+}
+
+.breadcrumb-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+
+/* Adjust media queries for responsiveness */
+@media (max-width: 768px) {
+  .header-top-bar p, .contact-info-item, .cta-button-container {
+    text-align: center;
+    margin: 5px 0;
+  }
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navigation-bar .nav {
+    flex-direction: column;
+  }
+  .navigation-bar .nav-link {
+    margin: 5px 0;
+  }
+  .logo-container {
+    justify-content: center;
+  }
 }

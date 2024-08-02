@@ -1,41 +1,262 @@
-.home-container {
-  padding: 20px;
-  max-width: 1200px;
+.home-page-container {
   margin: auto;
+  padding: 0;
 }
 
-.stats-section {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 0;
+.home-carousel .carousel-item img {
+  height: 730px;
+  object-fit: cover;
+  width: 100%;
 }
 
-.stat {
+.home-carousel .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 90px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 700px;
   text-align: center;
 }
 
-.stat i {
-  font-size: 2em;
-  color: #007bff;
+.home-carousel .carousel-caption h1,
+.home-carousel .carousel-caption p {
+  color: white;
 }
 
-.clients-section {
-  text-align: center;
-  margin: 50px 0;
+.home-carousel .carousel-indicators {
+  display: none;
 }
 
-.clients-section h2 {
-  margin-bottom: 20px;
-}
-
-.client-logos {
+.home-services-section {
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: -170px 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
-.client-logos img {
-  max-height: 100px;
-  object-fit: contain;
+.home-service-card {
+  flex: 1 1 300px; /* Ajuste para hacer los elementos flexibles */
+  margin: 10px 20px;
+  padding: 30px;
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  max-width: 550px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-service-card:hover {
+  background-color: #3498db; /* Cambia el fondo al hacer hover */
+  color: #ffffff; /* Cambia el color del texto al hacer hover */
+}
+
+.service-content {
+  flex: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.service-icon {
+  font-size: 5em;
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: #3498db;
+  position: absolute;
+  top: 8px;
+  right: 25px;
+}
+
+.service-icon2 {
+  font-size: 4em;
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: #ffffff;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.home-service-card:hover .service-icon {
+  color: #ffffff; /* Cambia el color del ícono al hacer hover */
+}
+
+.home-service-card:hover .service-content,
+.home-service-card:hover .service-icon {
+  opacity: 0; /* Oculta el contenido original */
+}
+
+/* Nuevos estilos para contenido adicional al pasar el cursor */
+.hidden-content {
+  position: absolute;
+  font-size: 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 30px 30px 50px 50px; /* Reducir padding superior */
+}
+
+.home-service-card:hover .hidden-content {
+  opacity: 1; /* Muestra el nuevo contenido */
+}
+
+.service-button {
+  display: none;
+  background-color: #ffffff9d;
+  color: #007bff;
+  border: none;
+  padding: 8px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.home-service-card:hover .service-button {
+  display: block;
+  opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .home-carousel .carousel-caption {
+    padding: 70px;
+    max-width: 600px;
+  }
+
+  .home-service-card {
+    max-width: 400px;
+  }
+
+  .service-icon {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-carousel .carousel-caption {
+    padding: 50px;
+    max-width: 500px;
+  }
+
+  .home-service-card {
+    margin: 10px;
+    max-width: 350px;
+  }
+
+  .service-icon {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-carousel .carousel-caption {
+    padding: 30px;
+    max-width: 300px;
+  }
+
+  .home-service-card {
+    margin: 5px;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .service-icon {
+    font-size: 3em;
+  }
+
+  .service-button {
+    padding: 8px 20px;
+  }
+}
+
+
+/* Estilos para la sección de introducción */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Asegura que ambos elementos tengan la misma altura */
+  justify-content: space-between;
+}
+
+.image-bienvenido {
+  position: relative;
+  width: 35%;
+  background-size: cover;
+  background-position: center;
+  height: 60vh; /* Altura fija para garantizar que la imagen y el texto coincidan en altura */
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: rgb(80, 115, 230);
+  font-size: 2rem;
+}
+.text-bienvenida {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.text-bienvenida h2 {
+  color: #4480A6;
+}
+
+.text-bienvenida h1 {
+  font-size: 1rem;
+  color: #4480A6;
+}
+
+.text-bienvenida p {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4480A6;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.info-text {
+  color: white;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+.contact-button {
+  background-color: #F26E22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
 }
