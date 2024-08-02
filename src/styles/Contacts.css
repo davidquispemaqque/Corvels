@@ -1,0 +1,78 @@
+.map-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px; /* Asegura que el ancho sea consistente con la sección de contacto */
+    height: 400px; /* Ajusta la altura según sea necesario */
+    border: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra similar a la de la sección de contacto */
+  }
+  
+
+
+.contact-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 20px; /* Espacio alrededor del contenedor */
+  }
+  
+  .contact-section {
+    max-width: 1200px; /* Ancho máximo de la sección */
+    width: 100%; /* Asegura que el contenedor se ajuste al ancho disponible */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Espacio interno */
+    background-color: #fff; /* Fondo blanco para la sección */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenedor */
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .contact-info h2, .contact-form h2 {
+    border-bottom: 2px solid rgb(32, 154, 219);
+    padding-bottom: 10px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form form div {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: rgb(90, 148, 189);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: rgb(86, 115, 201);
+  }
+  
+ 
