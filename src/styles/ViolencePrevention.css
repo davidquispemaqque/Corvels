@@ -1,0 +1,13 @@
+.service-detail-container {
+    padding: 20px;
+  }
+  
+  .service-detail-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Añade más estilos específicos para este componente aquí */
+  

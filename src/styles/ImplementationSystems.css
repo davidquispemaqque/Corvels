@@ -1,0 +1,62 @@
+.implementation-systems-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.implementation-systems-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.implementation-systems-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.implementation-systems-left-column, .implementation-systems-right-column {
+  flex: 1;
+}
+
+.implementation-systems-left-column {
+  max-width: 250px; /* Limita el ancho de la columna izquierda */
+}
+
+.implementation-systems-detail-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.implementation-systems-right-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.implementation-systems-right-column li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.implementation-systems-right-column li:before {
+  content: '•';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+
+
+
+/* Estilos para el carrusel */
+.carousel-container {
+  margin-top: 20px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}

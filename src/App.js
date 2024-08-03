@@ -9,6 +9,11 @@ import GeneralServices from './pages/GeneralServices';
 import Merchandising from './pages/Merchandising';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import ImplementationSystems from './pages/ImplementationSystems';
+import SafetySupervision from './pages/SafetySupervision';
+import ViolencePrevention from './pages/ViolencePrevention';
+import BlueCertificate from './pages/BlueCertificate';
+import TrainingAwareness from './pages/TrainingAwareness';
 
 const App = () => {
   return (
@@ -22,10 +27,14 @@ const App = () => {
         <Route path="/pages/merchandising" element={<Merchandising />} />
         <Route path="/pages/projects" element={<Projects />} />
         <Route path="/pages/contact" element={<Contact />} />
+        <Route path="/service-detail/1" element={<ImplementationSystems />} />
+        <Route path="/service-detail/2" element={<SafetySupervision />} />
+        <Route path="/service-detail/3" element={<ViolencePrevention />} />
+        <Route path="/service-detail/4" element={<BlueCertificate />} />
+        <Route path="/service-detail/5" element={<TrainingAwareness />} />
       </Routes>
       <Footer />
     </Router>
-    
   );
 };
 

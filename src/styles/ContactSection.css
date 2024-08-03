@@ -1,0 +1,99 @@
+.contact-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.contact-box {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.contact-image {
+  width: 100%;
+  height: 250px; /* Ajusta la altura para estirar la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+  border-radius: 10px;
+}
+
+.contact-box h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-button {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+  color: white;
+  border: 2px solid #0056b3;
+}
+
+.info-box, .brochure-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px; 
+}
+
+.info-box h2, .brochure-box h2 {
+  font-size: 1.2rem; /* Ajusta el tamaño de fuente */
+  margin-bottom: 10px;
+}
+
+.info-box p, .brochure-box p {
+  font-size: 1rem; /* Ajusta el tamaño de fuente */
+  margin-bottom: 5px;
+}
+
+.info-box hr, .brochure-box hr {
+  width: 20px;
+  height: 5px;
+  background-color: #007bff;
+  border: none;
+  margin: 10px auto;
+}
+
+.info-icon  {
+  color: #007bff;
+}
+
+.info-icon, .brochure-icon {
+  margin-right: 5px;
+  font-size: 1.2rem; /* Ajusta el tamaño de los iconos */
+  vertical-align: middle; /* Alinea verticalmente los iconos */
+}
+
+.brochure-button {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center; /* Centra el contenido dentro del botón */
+}
+
+.brochure-button:hover {
+  background-color: #0056b3;
+  color: white;
+  border: 2px solid #0056b3;
+}
